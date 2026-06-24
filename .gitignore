@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Obfuscated builds
+build-obfuscated/
+backend/dist/
+backend/test-dist/
+.pyarmor/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.local/
+
+# Cache
+.cache/
+.npm-cache/
+node_modules/
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+logs/*.log
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite3
+data/messages.db
+data/*.json
+
+# Qdrant local storage (optional - remove if you want to track)
+qdrant_storage/
+
+# Coverage & test artifacts
+htmlcov/
+.coverage
+coverage.xml
+assets/test_outputs/
+
+# Scraped docs (regenerate with scripts)
+liquid_docs_full.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

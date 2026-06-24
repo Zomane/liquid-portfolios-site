@@ -1,0 +1,110 @@
+
+roles:
+  Staff: "0"
+  Automata: "0"
+  Moderator: "1519094454265450506"
+  Guild Leader: "1519094379141398558"
+  Volunteer Dev: "0"
+
+  command_access:
+    - "1519094379141398558"
+    - "1519094454265450506"
+
+  guilds:
+    traders:
+      name: "Traders"
+      role_id: "1519094494258004150"
+      roles:
+        tide:
+          name: "tide"
+          id: "1519094685166076014"
+          tier: 1
+        degen:
+          name: "degen"
+          id: "1519094788857659512"
+          tier: 2
+        speculator:
+          name: "speculator"
+          id: "1519094844725788682"
+          tier: 3
+    content:
+      name: "content"
+      role_id: "1519094536247312566"
+      roles:
+        drip:
+          name: "drip"
+          id: "1519094901352956057"
+          tier: 1
+        frame:
+          name: "frame"
+          id: "1519094926707789906"
+          tier: 2
+        orator:
+          name: "orator"
+          id: "1519094989357977601"
+          tier: 3
+    designers:
+      name: "designers"
+      role_id: "1519094591620644904"
+      roles:
+        ink:
+          name: "ink"
+          id: "1519095046593581096"
+          tier: 1
+        sketch:
+          name: "sketch"
+          id: "1519095066314936450"
+          tier: 2
+        sculptor:
+          name: "sculptor"
+          id: "1519095109109551174"
+          tier: 3
+
+  community:
+    droplet: "0"
+    wave: "0"
+    tide: "0"
+    current: "0"
+    all_in_liquid: "0"
+    founding_droplets: "0"
+    liquid_frens: "0"
+    tsunami: "0"
+    event winner: "0"
+
+  TestReviewer: "0"
+
+  whitelists:
+    activity_exempt:
+      - "1519094379141398558"
+      - "1519094454265450506"
+
+
+    content_filter_exempt:
+      - "1519094379141398558"
+      - "1519094454265450506"
+
+    nominators: []
+
+
+    react_all_users:
+      - "1519094379141398558"
+      - "1519094454265450506"
+
+
+  monitored: []
+
+
+
+  promotion_roles:
+    - "1519094685166076014"
+    - "1519094788857659512"
+    - "1519094844725788682"
+    - "1519094901352956057"
+    - "1519094926707789906"
+    - "1519094989357977601"
+    - "1519095046593581096"
+    - "1519095066314936450"
+    - "1519095109109551174"
+
+
+  scam_check: []

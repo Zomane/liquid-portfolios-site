@@ -1,0 +1,70 @@
+
+
+
+.pr-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.pr-reject-modal {
+    background: var(--color-bg-primary, #1a1a1a);
+    border: 1px solid var(--color-border, #333);
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.pr-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--color-border, #333);
+}
+
+.pr-modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text-primary, #fff);
+}
+
+.pr-modal-close {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary, #999);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.pr-modal-close:hover {
+    background: var(--color-bg-secondary, #2a2a2a);
+    color: var(--color-text-primary, #fff);
+}
+
+.pr-modal-body {
+    padding: 24px;
+}
+
+.pr-modal-footer {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    border-top: 1px solid var(--color-border, #333);
+}

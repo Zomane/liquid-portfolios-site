@@ -1,0 +1,181 @@
+.not-found {
+  --not-found-nav-offset: clamp(84px, 11vh, 102px);
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: var(--not-found-nav-offset) 20px 0;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 620px at 50% -140px, rgba(237, 237, 255, 0.12), transparent 58%),
+    radial-gradient(520px 320px at 12% 84%, rgba(237, 237, 255, 0.08), transparent 72%),
+    radial-gradient(520px 320px at 88% 82%, rgba(224, 223, 239, 0.06), transparent 74%),
+    transparent;
+}
+
+.not-found__viewport {
+  min-height: calc(100vh - var(--not-found-nav-offset));
+  min-height: calc(100dvh - var(--not-found-nav-offset));
+  display: grid;
+  place-items: center;
+}
+
+.not-found__card {
+  width: min(640px, 100%);
+  position: relative;
+  text-align: center;
+  padding: clamp(30px, 6vw, 52px);
+  border-radius: 30px;
+  border: 1px solid var(--color-badge-border);
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 58%),
+    var(--surface-muted);
+  box-shadow:
+    0 22px 50px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.not-found__eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(237, 237, 255, 0.86);
+}
+
+.not-found__title {
+  margin: 0;
+  font-size: clamp(30px, 4.2vw, 46px);
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  padding-bottom: 0.08em;
+  text-wrap: balance;
+  background: linear-gradient(180deg, #ffffff 0%, #b5b5be 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.not-found__description {
+  max-width: 48ch;
+  margin: 16px auto 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(16px, 2.4vw, 18px);
+  line-height: 1.55;
+}
+
+.not-found__actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.not-found__action {
+  min-height: 48px;
+  min-width: 160px;
+  padding: 0 20px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.not-found__action--ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-badge-border);
+}
+
+.not-found__action--ghost:hover {
+  border-color: rgba(237, 237, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.not-found__action--solid {
+  background: var(--color-primary);
+  color: var(--color-primary-text);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 20px rgba(237, 237, 255, 0.26);
+}
+
+.not-found__action--solid:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(237, 237, 255, 0.32);
+}
+
+.not-found__action:focus-visible {
+  outline: 2px solid rgba(237, 237, 255, 0.9);
+  outline-offset: 2px;
+}
+
+[data-theme="light"] .not-found {
+  background:
+    radial-gradient(1200px 620px at 50% -140px, rgba(19, 19, 24, 0.06), transparent 58%),
+    radial-gradient(520px 320px at 12% 84%, rgba(19, 19, 24, 0.06), transparent 72%),
+    radial-gradient(520px 320px at 88% 82%, rgba(19, 19, 24, 0.04), transparent 74%),
+    transparent;
+}
+
+[data-theme="light"] .not-found__card {
+  background:
+    linear-gradient(165deg, rgba(19, 19, 24, 0.08) 0%, rgba(19, 19, 24, 0.03) 58%),
+    var(--surface-muted);
+  box-shadow:
+    0 14px 32px rgba(16, 20, 26, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .not-found__eyebrow {
+  color: rgba(19, 19, 24, 0.75);
+}
+
+[data-theme="light"] .not-found__title {
+  background: linear-gradient(180deg, #131318 0%, #444456 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .not-found__action--ghost:hover {
+  border-color: rgba(19, 19, 24, 0.2);
+  background: rgba(19, 19, 24, 0.05);
+}
+
+[data-theme="light"] .not-found__action:focus-visible {
+  outline: 2px solid rgba(19, 19, 24, 0.88);
+}
+
+@media (max-width: 560px) {
+  .not-found {
+    padding-inline: 16px;
+  }
+
+  .not-found__card {
+    border-radius: 22px;
+    padding: 28px 20px;
+  }
+
+  .not-found__actions {
+    gap: 10px;
+  }
+
+  .not-found__action {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .not-found__action {
+    transition: none;
+  }
+}
