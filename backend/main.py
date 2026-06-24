@@ -84,20 +84,6 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=cors_origins,
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allow_headers=[
-        "Authorization",
-        "Content-Type",
-        "X-CSRF-Token",
-        "Accept",
-        "Origin",
-    ],
-    expose_headers=["X-CSRF-Token"],
-)
 JWT_SECRET = os.getenv("JWT_SECRET", "")
 if not JWT_SECRET:
     import logging as _log
@@ -119,6 +105,20 @@ app.add_middleware(
         "/openapi.json",
         "/redoc",
     ]
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=cors_origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=[
+        "Authorization",
+        "Content-Type",
+        "X-CSRF-Token",
+        "Accept",
+        "Origin",
+    ],
+    expose_headers=["X-CSRF-Token"],
 )
 app.include_router(portfolio_router, prefix="/api")
 app.include_router(user_router, prefix="/api")

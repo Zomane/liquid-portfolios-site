@@ -66,7 +66,7 @@ def set_csrf_cookie(response: Response, token: str) -> None:
         value=token,
         httponly=True,
         secure=is_production,
-        samesite="lax",
+        samesite="none" if is_production else "lax",
         max_age=CSRF_TOKEN_EXPIRY_HOURS * 3600,
     )
 def get_csrf_token_from_request(request: Request) -> Optional[str]:
