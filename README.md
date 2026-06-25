@@ -18,7 +18,7 @@ Backend в demo-версии сохранён как рабочий API для D
 
 ## Demo
 
-- Live: https://liquid-portfolios-site.vercel.app
+- Live: https://liquid-portfolios-site.vercel.app (если сайт не загружается, попробуйте включить впн)
 - Backend/API: https://liquid-portfolios-site.onrender.com
 - Repository: https://github.com/Zomane/liquid-portfolios-site
 
@@ -228,7 +228,7 @@ npm run lint
 
 ## Future Improvements
 
-- Добавить upload-хранилище для proof images вместо локального filesystem.
-- Добавить полноценные frontend-тесты для основных пользовательских сценариев.
-- Расширить reviewer фильтры и поиск по portfolio applications.
-- Добавить audit log действий пользователей c reviewer доступом.
+- Добавить upload-хранилище для proof images вместо локального filesystem
+- Добавить полноценные frontend-тесты для основных пользовательских сценариев
+- Расширить reviewer фильтры и поиск по portfolio applications
+- Добавить audit log действий пользователей c reviewer доступом
