@@ -24,7 +24,14 @@ Backend в demo-версии сохранён как рабочий API для D
 
 ## Screenshots
 
-Скриншоты интерфейса будут добавлены позже.
+<img width="2506" height="1313" alt="image" src="https://github.com/user-attachments/assets/a1feeba1-c260-4282-89c5-859e58577f0d" />
+<img width="2510" height="1321" alt="image" src="https://github.com/user-attachments/assets/f1fde347-cc36-4638-9087-d553520f9926" />
+<img width="2514" height="1308" alt="image" src="https://github.com/user-attachments/assets/9036b6a1-be42-4abe-b855-65e9a4b7d504" />
+<img width="2512" height="1336" alt="image" src="https://github.com/user-attachments/assets/1a02ba50-183e-4e95-88bd-55f67017cb13" />
+<img width="2506" height="1315" alt="image" src="https://github.com/user-attachments/assets/13e9fabd-f2ca-4374-b4b7-a4891d08821b" />
+<img width="2511" height="1314" alt="image" src="https://github.com/user-attachments/assets/a725c749-74e7-4f82-b43a-b8dd606aad4e" />
+<img width="2551" height="1303" alt="image" src="https://github.com/user-attachments/assets/1768071b-56a9-457b-aac6-3056819792e5" />
+<img width="2555" height="1300" alt="image" src="https://github.com/user-attachments/assets/33d62f0b-723a-4443-8fd2-9a914791dce6" />
 
 ## Features
 
