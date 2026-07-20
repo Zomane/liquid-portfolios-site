@@ -146,35 +146,7 @@ copy .env.example .env
 ## Environment Variables
 
 Backend использует переменные из `backend/.env`:
-
-```env
-DATABASE_URL=sqlite+aiosqlite:///./data/app.db
-ENVIRONMENT=development
-
-DISCORD_TOKEN=
-DISCORD_GUILD_ID=
-DISCORD_GUILD_IDS=
-
-DISCORD_CLIENT_ID=
-DISCORD_CLIENT_SECRET=
-DISCORD_REDIRECT_URI=http://localhost:8000/api/auth/callback
-FRONTEND_URL=http://localhost:5173
-
-JWT_SECRET=
-
-TWITTER_API_KEY=
-MESSAGES_DB_PATH=./data/messages.db
-
-RESUBMIT_COOLDOWN_MINUTES=0
-PROMOTION_COOLDOWN_MINUTES=0
-```
-
 Frontend использует переменные из `liquidweb/.env`:
-
-```env
-VITE_API_URL=http://localhost:8000
-VITE_ENABLE_TWEET_EMBEDS=false
-```
 
 ## Run Project
 
@@ -192,21 +164,6 @@ npm run dev
 ```
 
 После запуска frontend будет доступен по адресу [http://localhost:5173](http://localhost:5173), backend — по адресу [http://localhost:8000](http://localhost:8000).
-
-## Discord Setup
-
-Для локальной работы нужно создать Discord Application в Developer Portal:
-
-1. Создать application и bot.
-2. Скопировать Application ID в `DISCORD_CLIENT_ID`.
-3. Скопировать Client Secret в `DISCORD_CLIENT_SECRET`.
-4. Скопировать Bot Token в `DISCORD_TOKEN`.
-5. Добавить OAuth2 redirect URL:
-6. Пригласить bot на Discord server.
-7. Создать guild roles и tier roles.
-8. Записать role IDs в `config/roles.yaml`.
-
-Для reviewer-доступа пользователь должен иметь роль Guild Lead / Moderator, указанную в backend-конфигурации.
 
 ## Run with Docker
 
