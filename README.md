@@ -2,7 +2,7 @@
 
 Демонстрационная версия Discord based приложения для подачи и ревью портфолио внутри комьюнити. Проект показывает полный пользовательский сценарий: вход через Discord, выбор гильдии, отправку портфолио, просмотр статуса заявки и reviewer панель для одобрения или отклонения портфолио.
 
-## Project Context and My Contribution
+## О проекте и моем вкладе
 
 Изначально проект разрабатывался командой из 3 человек - 2 frontend разработчика и 1 backend разработчик, как часть экосистемы Liquid Trading / Hyperliquid community. В исходной версии в приложении было больше экспериментальной логики: wallet-интеграция, дополнительные guild-разделения, парламентское голосование и часть legacy-кода. Моей основной зоной ответственности была frontend-часть приложения: интерфейс подачи портфолио, отображение пользовательских статусов, страницы портфолио и страницы reviewer, а так же frontend логика приложения. 
 
@@ -16,13 +16,13 @@
 
 Backend в demo-версии сохранён как рабочий API для Discord OAuth2, хранения портфолио, reviewer действий и назначения Discord ролей
 
-## Demo
+## Демонстрация
 
-- Live: https://liquid-portfolios-site.vercel.app (если сайт не загружается, попробуйте включить впн)
+- Live: https://liquid-portfolios-site.vercel.app
 - Backend/API: https://liquid-portfolios-site.onrender.com
 - Repository: https://github.com/Zomane/liquid-portfolios-site
 
-## Screenshots
+## Скриншоты интерфейса
 
 <img width="2506" height="1313" alt="image" src="https://github.com/user-attachments/assets/a1feeba1-c260-4282-89c5-859e58577f0d" />
 <img width="2510" height="1321" alt="image" src="https://github.com/user-attachments/assets/f1fde347-cc36-4638-9087-d553520f9926" />
@@ -33,7 +33,7 @@ Backend в demo-версии сохранён как рабочий API для D
 <img width="2551" height="1303" alt="image" src="https://github.com/user-attachments/assets/1768071b-56a9-457b-aac6-3056819792e5" />
 <img width="2555" height="1300" alt="image" src="https://github.com/user-attachments/assets/33d62f0b-723a-4443-8fd2-9a914791dce6" />
 
-## Features
+## Возможности
 
 - Авторизация через Discord OAuth2
 - Получение Discord-ролей пользователя с сервера
@@ -48,7 +48,7 @@ Backend в demo-версии сохранён как рабочий API для D
 - Локальное хранение данных через SQLite
 - Тесты для backend-логики и security checks
 
-## Tech Stack
+## Технологии 
 
 **Frontend:**
 
@@ -70,7 +70,7 @@ Backend в demo-версии сохранён как рабочий API для D
 - Pytest
 - Docker
 
-## Project Structure
+## Структура проекта
 
 ```text
 liquid-portfolio/
@@ -101,16 +101,8 @@ liquid-portfolio/
 └── README.md
 ```
 
-## Getting Started
-
-### Clone Repository
-
-```bash
-git clone https://github.com/your-username/liquid-portfolio.git
-cd liquid-portfolio
-```
-
-### Backend Setup
+## Запуск проекта
+### Настройка backend
 
 Создайте виртуальное окружение и установите зависимости:
 
@@ -128,7 +120,7 @@ copy backend\.env.example backend\.env
 
 Заполните `backend/.env` своими Discord credentials, server ID, bot token и JWT secret
 
-### Frontend Setup
+### Настройка frontend
 
 Установите frontend-зависимости:
 
@@ -143,12 +135,12 @@ npm install
 copy .env.example .env
 ```
 
-## Environment Variables
+## Переменные окружения
 
 Backend использует переменные из `backend/.env`:
 Frontend использует переменные из `liquidweb/.env`:
 
-## Run Project
+## Запуск
 
 Запустите backend из корня проекта:
 
@@ -165,14 +157,14 @@ npm run dev
 
 После запуска frontend будет доступен по адресу [http://localhost:5173](http://localhost:5173), backend — по адресу [http://localhost:8000](http://localhost:8000).
 
-## Run with Docker
+## Запуск через Docker
 
 ```bash
 docker build -t liquid-portfolio-backend ./backend
 docker run --rm -p 8000:8000 --env-file backend/.env liquid-portfolio-backend
 ```
 
-## Scripts
+## Команды
 
 Backend:
 
@@ -190,7 +182,7 @@ npm run preview
 npm run lint
 ```
 
-## Future Improvements
+## Возможные улучшения
 
 - Добавить upload-хранилище для proof images вместо локального filesystem
 - Добавить полноценные frontend-тесты для основных пользовательских сценариев
